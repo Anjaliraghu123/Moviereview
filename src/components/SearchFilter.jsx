@@ -14,8 +14,10 @@ export default function SearchFilter({ search, setSearch, genre, setGenre }) {
         onChange={(e) => setGenre(e.target.value)}
       >
         <option value="">All</option>
-        <option>Sci-Fi</option>
-        <option>Romance</option>
+         <option value="Movies">Movies</option>
+         <option value="Episode">Episode</option>
+         <option value="Series">Series</option> 
+
       </select>
     </div>
   );

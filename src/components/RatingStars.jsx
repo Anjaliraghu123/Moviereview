@@ -14,7 +14,7 @@ export default function RatingStars({ movieId }) {
   };
 
   return (
-    <div className="flex gap-1 text-yellow-400 text-xl cursor-pointer">
+    <div className="flex gap-1 text-yellow-400 text-xl cursor-pointer mt-2">
       {[1, 2, 3, 4, 5].map((star) => (
         <span key={star} onClick={() => handleRating(star)}>
           {star <= rating ? "★" : "☆"}

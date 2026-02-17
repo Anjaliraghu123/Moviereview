@@ -12,6 +12,7 @@ export default function MovieDetails() {
       const data = await getMovieDetails(id);
       setMovie(data);
     };
+
     fetchMovie();
   }, [id]);
 
@@ -23,7 +24,7 @@ export default function MovieDetails() {
 
       <div className="flex flex-col md:flex-row gap-6 mt-4">
         <img
-          src={movie.Poster !== "N/A" ? movie.Poster : "https://via.placeholder.com/300"}
+          src={movie.Poster}
           alt={movie.Title}
           className="w-72 rounded"
         />
