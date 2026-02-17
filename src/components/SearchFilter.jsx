@@ -1,4 +1,4 @@
-export default function SearchFilter({ search, setSearch, genre, setGenre }) {
+export default function SearchFilter({ search, setSearch, }) {
   return (
     <div className="flex gap-3 mb-5">
       <input
@@ -8,17 +8,7 @@ export default function SearchFilter({ search, setSearch, genre, setGenre }) {
         onChange={(e) => setSearch(e.target.value)}
       />
 
-      <select
-        className="border p-2 rounded"
-        value={genre}
-        onChange={(e) => setGenre(e.target.value)}
-      >
-        <option value="">All</option>
-         <option value="Movies">Movies</option>
-         <option value="Episode">Episode</option>
-         <option value="Series">Series</option> 
-
-      </select>
+      
     </div>
   );
 }
